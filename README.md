@@ -10,3 +10,7 @@ The user is required to download the
 ```functions.py``` 
 on the targetted machine and move them to  
 ```C:\Users\<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
+## Assigning ID to a new device
+Follow the following steps-
+1. Open ```config.py```
+2. Assign an id by the method(block number + room number + row number + system number)
