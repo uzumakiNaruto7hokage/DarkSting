@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replit Project</title>
+    <style>
+       
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+            color: white;  
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            padding: 20px;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+        }
+        .switch, .checkbox {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Switch between Python and CMD -->
+        <div class="switch">
+            <label>
+                <input type="radio" name="mode" value="python" checked> Python
+            </label>
+            <label>
+                <input type="radio" name="mode" value="cmd"> CMD
+            </label>
+        </div>
+
+        <!-- Checkbox for repeating commands -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="repeat"> Repeat Command
+            </label>
+        </div>
+
+        <!-- Text area at the bottom -->
+        <div class="bottom">
+            <textarea id="command" placeholder="Enter your command..."></textarea>
+            <button id="runButton">Run Command</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle functionality
+        document.getElementById('runButton').addEventListener('click', function() {
+            const command = document.getElementById('command').value;
+            const mode = document.querySelector('input[name="mode"]:checked').value;
+            const repeat = document.getElementById('repeat').checked;
+
+            // Display the values for now (for demonstration purposes)
+            console.log(`Mode: ${mode}, Command: ${command}, Repeat: ${repeat}`);
+
+            // Add functionality for handling command execution here
+            // E.g., Sending the data to the server for execution
+        });
+    </script>
+</body>
+</html>

