@@ -14,3 +14,8 @@ on the targetted machine and move them to
 Follow the following steps-
 1. Open ```config.py```
 2. Assign an id by the method(block number + room number + row number + system number)
+## Required libraries
+-pyautogui
+-pygame
+-pyperclip
+-requests
